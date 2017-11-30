@@ -2,20 +2,31 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgba(3, 61, 78, 0.5);
+    background-color: rgba(6, 38, 48, 0.5);
     
 }
 header {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    height: 250px;
+    height: 350px;
     width: auto;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background-image: url('sky.jpeg');
     background-size: cover;
     background-position: bottom;
+    font-family: 'Special Elite', cursive;
+    
+}
+.header-cover {
+    margin: 0;
+    padding: 0;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 255, .05);
+    object-fit: cover;
 }
 li {
     margin: 0 5%;
@@ -34,15 +45,36 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin: 0 auto;
+    margin: 5px auto;
     padding: 0;
+    font-size: 23px;
     text-decoration: none;
-    color: white;
-
+    color: lightseagreen;
+    
 }
 a:hover {
     text-decoration: underline;
-    color: lightseagreen;
-    font-size: 20px;
+    color: rgba(142, 238, 228, .9);
+    font-size: 25px;
+}
+footer {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+section {
+    text-align: center;
+
+}
+h1{
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+        
+}
+h2 {
+    font-family: 'Poiret One', cursive;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
 }

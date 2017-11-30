@@ -1,0 +1,30 @@
+header {
+    height: 250px;
+    width: auto;
+    margin: 0;
+    padding: 20px;
+    background-image: url('sky.jpeg');
+    background-size: cover;
+    background-position: bottom;
+}
+li {
+    
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, .7)
+}
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+
+}

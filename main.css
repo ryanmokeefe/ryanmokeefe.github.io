@@ -1,4 +1,14 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(3, 61, 78, 0.5);
+    
+}
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     height: 250px;
     width: auto;
     margin: 0;
@@ -8,14 +18,17 @@ header {
     background-position: bottom;
 }
 li {
-    
+    margin: 0 5%;
+    padding: 0;
+    list-style: none;
 }
 nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    background-color: rgba(0, 0, 0, .7)
+    background-color: rgba(0, 0, 0, .7);
+    height: 40px;
 }
 a {
     display: flex;
@@ -23,8 +36,13 @@ a {
     align-items: center;
 
     margin: 0 auto;
-    padding: 5px;
+    padding: 0;
     text-decoration: none;
     color: white;
 
+}
+a:hover {
+    text-decoration: underline;
+    color: lightseagreen;
+    font-size: 20px;
 }

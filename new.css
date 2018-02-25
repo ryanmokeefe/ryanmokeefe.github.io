@@ -8,13 +8,16 @@ body {
     color: rgb(25, 34, 49);
     font-weight: 900;
     text-align: center;
-    font-family: helvetica, arial, sans-serif;
+    font-family: Montserrat, arial, sans-serif;
 
 }
 .name {
     margin: 0;
     padding: 10%;
     letter-spacing: 1px;
+}
+.tagline {
+    font-size: 16px;
 }
 .header-cover {
     /* background-color: #98878F; */
@@ -24,6 +27,7 @@ body {
 }
 /* NAV */
 nav {
+    
     border-top: 10px solid #192231;
     border-bottom: 10px solid #192231;
     box-sizing: border-box;
@@ -64,30 +68,34 @@ a {
     /* color: #985E6D; */
     color: #fff;
 }
-a:hover {
-    text-decoration: underline;
-    color: rgba(142, 238, 228, .9);
-    font-size: 25px;
-    /* margin: 0 auto; */
-}
-
 
 
 /* end NAV */
 
 /* content */
 
+
+
 main {
     margin: 0;
+}
+a:hover {
+    font-family: Special Elite;
+    text-decoration: underline;
+    color: #192231;
+    font-size: 22px;
+    text-outline: 1px 1px white;
+    /* margin: 0 auto; */
 }
 .about {
     border-bottom: 10px solid #192231;
     border-top: 10px solid #192231;
     box-sizing: border-box;
 
-    height: 400px;
+    /* height: 400px; */
     width: 100%;
     margin: 0;
+    padding: 20% 10%;
 
 }
 .projects {
@@ -124,10 +132,13 @@ footer {
 /* projects */
 
 .project-solo {
-    border: solid 2px black;
-/* lose height to maintain aspect ratio */
+    /* border: solid 2px black; */
     width: 75%;
     margin: 10% auto;
+    background-color: #192231;
+    border-bottom: solid 2px #192231;
+    border-top: solid 2px #192231;
+
 
 }
 .project-img img {
@@ -135,7 +146,7 @@ footer {
 }
 .project-img {
     box-sizing: border-box;
-    border: solid 2px black;
+    /* border: solid 2px black; */
     object-fit: contain;
     overflow: hidden;
     width: 100%;
@@ -144,14 +155,10 @@ footer {
 
 }
 .project-desc {
-    box-sizing: border-box;
-    border: solid 2px black;
-   
-    height: 200px;
+    box-sizing: border-box;   
     width: 100%;
     margin: 0;
-    padding: 0;
-
+    padding: 5%;
     background-color: #98878F;
     
 }
@@ -180,7 +187,7 @@ footer {
     }
     .project-img {
         box-sizing: border-box;
-        border: solid 2px black;
+        /* border: solid 2px black; */
         object-fit: contain;
         overflow: hidden;
 
@@ -190,18 +197,53 @@ footer {
 
     }
     .project-desc {
-        /* display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-end; */
         box-sizing: border-box;
-        border: solid 2px black;
-    
+        /* border: solid 2px black; */
         height: 200px;
         width: 100%;
         margin: 0;
         padding: 0;
-
         background-color: #98878F;
-        
     }
+
+    /* leaves */
+
+    /* bird */
+   
+    /* .bird {
+   
+        position: relative;
+        left: -400px;
+        top: 100px;
+
+        height: 75px;
+        animation-name: fall;
+        animation-duration: 20000ms;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        -webkit-animation-name: fall;
+        -webkit-animation-duration: 20000ms;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: fall;
+        -moz-animation-duration: 20000ms;
+        -moz-animation-iteration-count: 1;
+        -moz-animation-timing-function: linear;
+        -ms-animation-name: fall;
+        -ms-animation-duration: 20000ms;
+        -ms-animation-iteration-count: 1;
+        -ms-animation-timing-function: linear;
+        transition: rotate(3600deg);
+        -o-transition: rotate(3600deg);
+    } */
+    
+    /* @keyframes fall {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+
+        10% { transform: translate(1px, 1px) rotate(0deg);}
+
+        20% { transform: translate(200px, 5px) rotate(10deg);}
+    
+        100% { transform: translate(1000px, 100px) rotate(20deg); }
+    } */
 }

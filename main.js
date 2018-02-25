@@ -7,4 +7,3 @@ $(function() {
     div.css('height', width);
 });
 
-

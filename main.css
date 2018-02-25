@@ -136,3 +136,66 @@ p {
     padding: 0;
     font-weight: 900;
 }
+
+/* ************************** */
+/* HTML */
+/* 
+<img class="leaves" id="leaf" src="img/leaf-2.png" alt="leaf">
+<img class="leaves" src="img/leaf-2.png" alt="leaf">
+<img class="leaves" src="img/leaf-2.png" alt="leaf">
+
+<img class="leaves" src="img/leaf-3.png" alt="leaf">
+<img class="leaves" src="img/leaf-3.png" alt="leaf">
+<img class="leaves" src="img/leaf-3.png" alt="leaf">
+<img class="leaves" src="img/leaf-3.png" alt="leaf">
+
+<img class="leaves" src="img/leaf-1.png" alt="leaf">
+<img class="leaves" src="img/leaf-1.png" alt="leaf">
+<img class="leaves" src="img/leaf-1.png" alt="leaf">
+<img class="leaves" src="img/leaf-1.png" alt="leaf">
+
+<img class="leaves" src="img/leaf-2.png" alt="leaf">
+<img class="leaves" src="img/leaf-2.png" alt="leaf">
+<img class="leaves" src="img/leaf-2.png" alt="leaf"> */
+
+ /* leaves */
+ .leaves {
+    /* width: 50px; */
+    /* display: relative; */
+    height: 25px;
+    animation-name: fall;
+    animation-duration: 30000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    -webkit-animation-name: fall;
+    -webkit-animation-duration: 30000ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: fall;
+    -moz-animation-duration: 30000ms;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: fall;
+    -ms-animation-duration: 30000ms;
+    -ms-animation-iteration-count: 1;
+    -ms-animation-timing-function: linear;
+    transition: rotate(3600deg);
+    -o-transition: rotate(3600deg);
+}
+@keyframes fall {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+
+    100% { transform: translate(50px, 500px) rotate(20deg); }
+    
+    /* 10% { transform: translate(100px, 100px) rotate(40deg); }
+    20% { transform: translate(200px, 200px) rotate(40deg); }
+    30% { transform: translate(300px, 280px) rotate(30deg); }
+    40% { transform: translate(400px, 330px) rotate(20deg); }
+    50% { transform: translate(500px, 360px) rotate(40deg); }
+    60% { transform: translate(600px, 340px) rotate(30deg); }
+    70% { transform: translate(700px, 300px) rotate(20deg); }        50% { transform: translate(250px, 200px) rotate(40deg); }
+    80% { transform: translate(800px, 250px) rotate(30deg); }
+    90% { transform: translate(900px, 210px) rotate(20deg); }
+    100% { transform: translate(1000px, 180px) rotate(20deg); } */
+    
+}

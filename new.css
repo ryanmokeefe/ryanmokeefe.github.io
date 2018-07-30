@@ -149,7 +149,7 @@ a:hover {
     background-color: #192231;
 }
 .project-desc {
-    display: none;
+    /* display: none; */
 
     box-sizing: border-box;   
     width: 100%;

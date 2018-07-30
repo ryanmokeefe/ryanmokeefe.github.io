@@ -1,7 +1,10 @@
 .hidden {
     display: none;
 }
-
+a {
+    text-decoration: none;
+    color: white;
+}
 /* background-color: #2F3131; */
 /* background-color: rgb(0, 89, 191); */
 body {
@@ -27,7 +30,6 @@ nav {
 .nav-buttons {
     box-sizing: border-box;
     height: 75px;
-    /* border: 2px solid blue; */
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -52,13 +54,9 @@ nav {
     font-weight: 100;
     letter-spacing: 3px;
 }
-a {
-    font-size: 18px;
-    /* text-decoration: none; */
-    color: #2F3131;
-    /* padding: 20px; */
-}
-/* end NAV */
+
+/* ABOUT */
+
 .name {
     position: relative;
     bottom: 40px;
@@ -100,4 +98,53 @@ h3 {
 }
 footer {
     color: rgb(0, 89, 191);
+}
+
+/* PROJECTS */
+
+.projects h3 {
+    margin: 10px 0 50px;
+}
+.projects {
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.project-solo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px solid red;
+    height: 500px;
+    width: 50%;
+    margin: 50px auto;
+
+}
+.project-title {
+    position: relative;
+    bottom: 30px;
+    width: 50%;
+    margin: 10px auto;
+    padding: 12px 0;
+    background-color: white;
+    color: #222;
+}
+.project-img {
+    height: 200px;
+}
+.project-img img {
+    height: 70%;
+    width: auto;
+    margin: 0 auto;
+}
+.project-desc {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+}
+.project-links {
+    width: 100%;
+    background-color:  rgb(0, 89, 191);
 }

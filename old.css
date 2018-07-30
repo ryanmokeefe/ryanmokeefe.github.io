@@ -6,6 +6,30 @@ body {
 
     padding: 0;
     margin: 0;
+
+    /* COLOR PALETTE */
+
+    color: rgb(0, 89, 191);
+
+    color: #dae9e4;
+    color: #8bcbc8;
+    color: #ecc7c0;
+    color: #fdea84;
+    color: #3c2e3d;
+
+    color: #6c5e6d; /* lighter than 3c2e3d */
+
+    color: #192231;
+
+
+
+
+    color: #2e4057;
+    color: #99c24d;
+    color: #2f2d2e;
+
+
+
 }
 .container {
     background-color: rgb(113, 144, 153);

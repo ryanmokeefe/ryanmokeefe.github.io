@@ -69,7 +69,7 @@ projects.click(function() {
     $(img).clone().appendTo(popout);
     $(desc).clone().appendTo(popout);
 
-    popout.style.display = "inline";
+    popout.style.display = "flex";
 });
 
 var exit = $(".exit-popout");

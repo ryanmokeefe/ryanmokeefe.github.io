@@ -1,6 +1,6 @@
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
 body {
     margin: 0;
@@ -149,6 +149,8 @@ a:hover {
     background-color: #192231;
 }
 .project-desc {
+    display: none;
+
     box-sizing: border-box;   
     width: 100%;
     margin: 0;
@@ -204,6 +206,31 @@ footer {
     text-align: center;
     height: 100px;
 }
+
+#popout {
+    z-index: 3;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .9);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+#popout img {
+    position: fixed;
+    left: 10px;
+
+    width: 25vw;
+    margin: 0 auto;
+}
+#popout title {display: inline; color: white;}
+
+#popout desc {display: inline; color: white;}
+
+
+
 
 
 @media screen and (min-width: 600px) {

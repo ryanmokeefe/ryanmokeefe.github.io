@@ -1,4 +1,3 @@
-// console.log("hello world")
 
 $(function() {
     var div = $('.project-img');
@@ -8,7 +7,6 @@ $(function() {
 
 
 // Fixed NavBar
-
 
 var offsetNav = $(".nav").offset().top;
 $(window).resize(function(){
@@ -32,16 +30,6 @@ $(window).scroll(function() {
 });
 
 
-
-
-// Nav Scrolling Links:
-
-
-// find dist from projects Top, contacts Top
-// make nav Buttons
-// on click, scroll to dist - navbar height
-
-
 // // Popout Info:
 
 var w = $(window).width();
@@ -55,9 +43,6 @@ popout.style.top = (h/2)-(divH/2)+"px";
 popout.style.left = (w/2)-(divW/2)+"px";
 
 var projects = $(".project-solo");
-
-// var popoutVid = $(popout).find("video");
-// var oldSource = $(popoutVid).find("source");
 
 
 projects.click(function() {
@@ -73,6 +58,10 @@ projects.click(function() {
 });
 
 var exit = $(".exit-popout");
+
+exit.click(function() {
+    clearPopout();
+});
 
 $(document).keydown(function(e) {
     if (e.keyCode == 27) {
@@ -90,3 +79,15 @@ var clearPopout = () => {
 
     popout.style.display = "none";
 };
+
+
+
+
+
+// Nav Scrolling Links:
+
+
+// find dist from projects Top, contacts Top
+// make nav Buttons
+// on click, scroll to dist - navbar height
+

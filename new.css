@@ -208,7 +208,19 @@ footer {
     height: 70px;
     padding-top: 20px;
 }
-
+.scrollToTop {
+    position: fixed;
+    bottom: -60px;
+    left: 10px;
+    height: 35px;
+    width: 35px;
+    transition: 1s;
+    background-color: rgba(122, 138, 167, .8);
+    border-radius: 50px;
+}
+.scrollToTop.show {
+    bottom: 10px;
+}
 /* Popout */
 
 #popout {
@@ -277,6 +289,9 @@ footer {
     .header-cover {
         border-top: 50px solid #192231;
     }
+    .name {
+        padding: 5%;
+    }
     a {
         font-size: 18px;
     }
@@ -336,7 +351,6 @@ footer {
     .click-img {
         position: relative;
         margin: 0 auto;
-        
     }
     .project-desc {
         box-sizing: border-box;
@@ -361,7 +375,10 @@ footer {
         width: 100%;
     }
 
-
+    .scrollToTop {
+        height: 48px;
+        width: 48px;
+    }
 
 }
 

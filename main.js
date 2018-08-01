@@ -6,6 +6,21 @@ $(function() {
 });
 
 
+$(window).scroll(function() {
+    if ($(window).scrollTop() <= 0)
+    {
+        $(".scrollToTop").removeClass("show");
+
+        // $(".scrollToTop").addClass("hidden");
+    } else 
+    {
+        $(".scrollToTop").addClass("show");
+
+        // $(".scrollToTop").removeClass("hidden");
+    }
+});
+
+
 // Fixed NavBar
 
 var offsetNav = $(".nav").offset().top;

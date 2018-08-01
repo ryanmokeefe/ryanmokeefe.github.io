@@ -40,6 +40,29 @@ body {
 
 
 
+/* 
+    // Nav Scroll Transition
+
+    // href="#
+    // $('a[href*="#"]')
+    
+        // .click(function(e) {
+        //     e.preventDefault();
+        //     var target = this.href;
+    
+        //     $('body').animate({
+        //         scrollTop: 0
+        //       }, 500);
+    
+        // });
+    
+     */
+
+
+
+
+
+
 }
 
 /* ************************** */

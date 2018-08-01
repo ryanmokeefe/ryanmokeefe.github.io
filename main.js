@@ -5,6 +5,7 @@ $(function() {
     div.css('height', width);
 });
 
+//   Scroll To Top
 
 $(window).scroll(function() {
     if ($(window).scrollTop() <= 0)
@@ -18,6 +19,12 @@ $(window).scroll(function() {
 
         // $(".scrollToTop").removeClass("hidden");
     }
+});
+
+$(".scrollToTop").click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+      }, 500);
 });
 
 

@@ -1,7 +1,6 @@
 .hidden {
     display: none;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -12,10 +11,31 @@ body {
     text-align: center;
     font-family: Montserrat, arial, sans-serif;
 }
+
+/* bgs tests */
+/*
+.projects {
+    background-image: url("img/flowers.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ header {
+    background-image: url("img/tree.jpg");
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/*  */
+
 .name {
     margin: 0;
     padding: 10%;
     letter-spacing: 2px;
+    color: #88d3ff;
 }
 .tagline {
     font-size: 16px;
@@ -23,6 +43,8 @@ body {
 .header-cover {
     min-height: 100vh;
     border-top: 20px solid #192231;
+    padding-top: 25vh; 
+    background-color: rgba(255, 255, 255, .5);
 }
 .portrait {
     width: 20%;
@@ -50,6 +72,9 @@ nav a {
     border: none;
     text-transform: uppercase;
     color: #adbbb6;
+}
+nav a:hover {
+    color: #eee;
 }
 .fixedNav {
     position: fixed;
@@ -175,6 +200,7 @@ a:hover {
 }
 
 /* Contact */
+
 
 .contact {
     border-top: 5px solid #192231;
@@ -368,17 +394,29 @@ footer {
     /* Contact */
 
     .contact {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
         border-top: 10px solid #192231;
         width: 70%;
     }    
-    .contact icons {
+    .contact .icons {
         display: inline-flex;
         flex-flow: row wrap;
         align-content: center;
         justify-content: center;
         width: 100%;
     }
+    .contact a {
+        margin: 2px 50px;
 
+    }
+    .contact a:hover {
+        margin: 0 44px;
+    }
+    .contact a:hover img {
+        opacity: 0.75;
+    }
     .scrollToTop {
         height: 48px;
         width: 48px;

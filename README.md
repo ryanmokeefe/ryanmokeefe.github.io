@@ -1,6 +1,5 @@
 # ryanmokeefe.github.io
 
-## This is the portfolio of Ryan O'Keefe
 
 ### Skills
 Skills include, but are not limited to: 

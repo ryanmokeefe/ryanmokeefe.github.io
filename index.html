@@ -4,188 +4,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ryan O'Keefe</title>
-    
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="new.css" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+<title>Graphic Design</title>
+<!-- <script src="scroll.js"></script> -->
 </head>
 <body>
-    <header>
-        <div class="header-cover">
-            <!-- <img class="portrait" src="img/ga-portrait.jpg" alt="profile"> -->
-            <h1 class="name">Ryan O'Keefe </br>
-                <span class="tagline">Full Stack Web Developer, driven by curiosity and a lifelong dedication to learning.</span>
-            </h1>
-            
-            <nav class="nav scrollNav">
-                <a class="navlink" href="#about">About</a>
-                <a class="navlink" href="#projects">Portfolio</a>
-                <a class="navlink" href="#contact">Contact</a>
-                <a href="https://github.com/ryanmokeefe">GitHub</a>
-            </nav>
-        </div>
-      
-    </header>
+
+<nav class="fixed">
+    <a href="#about"><span>ABOUT</span> </a>
+    <a href="#projects"><span>PROJECTS</span></a>
+    <a href="#portfolio" class="portfolio-icon"><span>PORTFOLIO</span></a>
+    <a href="#contact"><span>CONTACT</span></a>
+</nav>
+
+
+<h1 class="bg-fixed">Full-Stack Web Developer bringing you the latest in engaging design.</h1>
+
+<a class="scrollDown" href="#about"></a>
     
-    <main>
-        <div class="wrapper">
 
-        <div class="about" id="about">
-            <h3>A LITTLE ABOUT ME</h3>
-            <div class="para">
+<div class="about bg-fixed" id="about">
+    <h2>ABOUT ME<br><span class="about-tagline"> 
+            I'm a full Stack Web Developer who is driven by curiosity and a lifelong dedication to learning. Passionate about transcending barriers through open-source knowledge, I excel at problem solving through innovative thinking, creativity, and resourcefulness.
+    </span></h2>
 
-                <p>
-                    I'm a full Stack Web Developer who is driven by curiosity and a lifelong dedication to learning. Passionate about transcending barriers by the universal diffusion of knowledge, I excel at problem solving through innovative thinking, creativity, and resourcefulness.
-                </p>
-                <h4> Background </h4>
-                <p>
-                    Previously, I worked in retail and customer service for ten years, including as a senior team lead at Target where I was responsible for daily store operations, team management, and processing logistics. I've spent the last four years also working in the event industry as an A/V and lighting technician, building sets for business conventions, award ceremonies, and music festivals. 
-                    Through all of this, I've learned the importance of teamwork as well as taking the inititive to be able to work independently. 
-                </p>
-                <p>
-                    When I'm not creating things with code I love to create all sorts of things with other materials and get lost exploring new places. You can find me either sketching, painting, lost in a good book, or on my bicycle looking to get lost on a new trail.
+<!-- background box + resume box -->
 
-                </p>
-            </div>
-        </div>
-        </div>
-    
-        
-<div class="project-bg">
-    <div class="projects" id="projects">
-        
-            <h3>PORTFOLIO</h3>
-    </br>
-    <!--  -->
-    <div class="para">
+</div>
 
-        <p>
-             
-        </p>
-        <!-- <h4> Background </h4> -->
-        <p>
-            
-        </p>
-        
-    </div>
+<div class="projects bg-fixed" id="projects">
+    <h2>Featured Projects</h2>
 
-<!--  -->
-
-        <div class="project-1 project-solo">
-            <div class="project-title "> Trivia </div>
+    <div class="project-board1">
+        <div class="project">
             <div class="project-img">
-                <img src="img/project-1.png" alt="project-1">
+                <img src="img/img1.jpg" alt="">
+                <div class="hidden">
+                    <p>2018</p>
+                    <p>description</p>
+                    <a class="codeLinks front" href="#">
+                        Code
+                        <!-- <span> FRONTEND </span> -->
+                    </a>
+                    <a class="codeLinks" href="#">
+                        Code
+                        <!-- <span> BACKEND </span> -->
+                    </a>
+                    <a class="codeLinks" href="#">
+                        Site
+                        <!-- <span> GO TO </span> -->
+                    </a>
+                </div>
             </div>
-            <img class="click-img" src="img/viewmoreWhite.png" alt="click for more">
-            <div class="click-me">View More </div>
-
-            <div class="project-desc hidden">
-                <p>
-                    A simple trivia game built using just HTML, CSS, and JavaScript.
-                </p>
-                <a href="https://ryanmokeefe.github.io/project-1/">Check it out</a>
-            </br>
-                <a href="https://github.com/ryanmokeefe/Project-1">See the Code</a>
-            </div>
+            <h4>Project Name</h4>
+            <p class="project-tag">Description</p>
         </div>
-
-
-        <div class="project-2 project-solo">
-            <div class="project-title "> Additional Resources </div>
+                
+        <div class="project">
             <div class="project-img">
-                <img src="img/project-2.png" alt="project-2">
+                <img src="img/img1.jpg" alt="">
+                <div class="hidden">
+                    <p>2018</p>
+                    <p>description</p>
+                    <a href="#">Code</a>
+                    <a href="#">Code</a>
+                    <a href="#">Site</a>
+                </div>
             </div>
-            <img class="click-img" src="img/viewmoreWhite.png" alt="click for more">
-            <div class="click-me ">View More </div>
-
-            <div class="project-desc hidden">
-                <p>
-                   A website for compiling articles, lessons, tutorials, and exercises related to all things web. 
-                </br></br>
-                    Built using React, Express, MongoDB, Node, and Materialize.
-                </p>
-                <a href="https://additionalresources.herokuapp.com/">Check it out</a>
-            </br>
-                <a href="https://github.com/ryanmokeefe/Project-2">See the Code</a>
-            </div>
-            
-        </div>
-   
-        <div class="project-3 project-solo">
-            <div class="project-title "> Lit Swap </div>
-            <div class="project-img">  
-            <img src="img/project-3.png" alt="project-3">
-            </div>
-            <img class="click-img" src="img/viewmoreWhite.png" alt="click for more">
-            <div class="click-me "> View More </div>
-
-            <div class="project-desc hidden">
-                <p>
-                    A Collaborative project for trading books and music. 
-                </br></br>
-                    Built using React, Express, MongoDB, Node, and Materialize.
-                </p>
-                <a href="https://shiny-flight.surge.sh/">Check it out</a> 
-            </br>
-                <a href="https://github.com/keaglin/project3-react">See the Code - Front End</a>
-                <a href="https://github.com/keaglin/project3-api">See the Code - API</a>
-
-            </div>
+            <h4>Project Name</h4>
+            <p class="project-tag">Description</p>
         </div>
 
+        <div class="project">
+            <div class="project-img">
+                <img src="img/img1.jpg" alt="">
+                <div class="hidden">
+                    <p>2018</p>
+                    <p>description</p>
+                    <a href="#">Code</a>
+                    <a href="#">Code</a>
+                    <a href="#">Site</a>
+                </div>
+            </div>
+            <h4>Project Name</h4>
+            <p class="project-tag">Description</p>
+        </div>
     </div>
 </div>
 
-<!-- <div class="contact"> -->
-        <!-- <h2>Let's Create Together!</h2> -->
-        <!-- <div class="social-group"> -->
-
-    <div class="contact-box">
-        <div class="contact" id="contact">
-            <h3>CONTACT</h3>
-            <div class="icons">
-                <!-- <div> -->
-                    <a href="mailto:ryanokeefe208@gmail.com">
-                        <img src="img/email.png" alt="email">EMAIL
-                    </a> 
-                <!-- </div> -->
-                <!-- <div> -->
-                    <a href="https://www.linkedin.com/in/ryan-o-keefe-288235139/">
-                        <img src="img/linkedin.png" alt="email">LINKEDIN
-                    </a>
-                <!-- </div> -->
-                <!-- <div> -->
-                    <a href="https://github.com/ryanmokeefe">
-                        <img src="img/github.png" alt="email">GITHUB
-                    </a>
-                <!-- </div> -->
-
+<div class="portfolio bg-fixed" id="portfolio">
+    <h2 class="portfolio-more">See More Work...</h2>
+    
+    <!-- Fullview -->
+    <div class="portfolio-fullview">
+        <h2 class="portfolio-h2">Portfolio <span class="exit"></span></h2>
+        <div class="project-board project-board2">
+            <div class="project">
+                <div class="project-img">
+                    <img src="img/img1.jpg" alt="">
+                    <div class="hidden">
+                        <p>2018</p>
+                        <p>description</p>
+                        <a href="#">Code</a>
+                        <a href="#">Code</a>
+                        <a href="#">Site</a>
+                    </div>
+                </div>
+                <h4>Project Name</h4>
+                <p>Description</p>
             </div>
+            <div class="project">
+                <div class="project-img">
+                    <img src="img/img2.jpg" alt="">
+                    <div class="hidden">
+                        <p>2018</p>
+                        <p>description</p>
+                        <a href="#">Code</a>
+                        <a href="#">Code</a>
+                        <a href="#">Site</a>
+                    </div>
+                </div>
+                <h4>Project Name</h4>
+                <p>Description</p>
+            </div>
+            <div class="project">
+                <div class="project-img">
+                    <img src="img/img3.jpg" alt="">
+                    <div class="hidden">
+                        <p>2018</p>
+                        <p>description</p>
+                        <a href="#">Code</a>
+                        <a href="#">Code</a>
+                        <a href="#">Site</a>
+                    </div>
+                </div>
+                <h4>Project Name</h4>
+                <p>Description</p>
+            </div>
+            <div class="project">
+                <div class="project-img">
+                    <img src="img/img4.jpg" alt="">
+                    <div class="hidden">
+                        <p>2018</p>
+                        <p>description</p>
+                        <a href="#">Code</a>
+                        <a href="#">Code</a>
+                        <a href="#">Site</a>
+                    </div>
+                </div>
+                <h4>Project Name</h4>
+                <p>Description</p>
+            </div>
+            <div class="project">
+                <div class="project-img">
+                    <img src="img/img4.jpg" alt="">
+                    <div class="hidden">
+                        <p>2018</p>
+                        <p>description</p>
+                        <a href="#">Code</a>
+                        <a href="#">Code</a>
+                        <a href="#">Site</a>
+                    </div>
+                </div>
+                <h4>Project Name</h4>
+                <p>Description</p>
+            </div>
+            
 
         </div>
     </div>
+    <!-- end Fullview -->
+</div>
 
 
-    </main>
-    
-    <footer>
-        2017
-    </br>
-    
-
-    </footer>
-
-    <!-- <div class="scrollToTop hidden" > -->
-        <img class="scrollToTop " src="img/scrollUp.png" alt="Back to top">
-    <!-- </div> -->
-    <div id="popout">
-        <div class="exit-popout"></div>
+<div class="contact" id="contact">
+    <h2>Let's Create Together!</h2>
+    <div class="social-group">
+        <button href="twitter.com" class="social twitter"></button>
+        <button href="facebook.com" class="social facebook"></button>
+        <button href="linkedin.com" class="social linkedin"></button>
     </div>
+</div>
 
+<footer>Made by <span>Ryan O'Keefe</span></footer>
 
-    <script src="main.js"></script>
+<img class="scrollToTop" src="img/scrollUp1.png" alt="Back to top">
+
+<script src="main.js"></script>
+
 </body>
+
 </html>

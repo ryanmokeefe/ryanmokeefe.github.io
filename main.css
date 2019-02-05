@@ -125,9 +125,6 @@ h2 {
 .about h2 {
     padding: 7% 8%;
 }
-.about p {
-    font-size: 85%;
-}
 .about-tagline {
     color: rgb(99, 91, 78);
     letter-spacing: 1pt;
@@ -156,15 +153,15 @@ h2 {
 .projects {
     background-image: url("img/img4.jpg");
 }
-.portfolio-more:hover {
+.portfolio-more:hover, .about-more:hover {
     background-color: rgba(247, 115, 8, .9);
     cursor: pointer;
     color: white;
 }
 
-/* PORTFOLIO FULLVIEW */
+/* PORTFOLIO/ABOUT FULLVIEW */
 
-.portfolio-fullview {
+.portfolio-fullview, .about-fullview {
     z-index: 10;
     position: fixed;
     bottom: 0;
@@ -178,15 +175,16 @@ h2 {
     box-sizing: border-box;
     overflow: scroll;
 }
-.portfolio-fullview.show {
+.portfolio-fullview.show, .about-fullview.showMore {
     left: 0;
 }
-.portfolio-h2 {
+
+.portfolio-h2, .about-h2 {
     background-color: rgb(247, 115, 8);
     color: white;
     letter-spacing: 2pt;
 }
-.exit {
+.exit, .exit-about {
     position: fixed;
     z-index: 100;
     top: 20px;
@@ -202,12 +200,26 @@ h2 {
     background-color: white;
     background-size: 80%;
 }
-.exit.show
-{
+.exit.show, .exit-about.showMore {
     z-index: 100;
     right: 20px;
     transition: .5s;
-} 
+}
+.about-fullview p {
+    color: #222;
+    background: rgba(255, 255, 255, .9);
+    padding: 1%;
+    margin: 10px auto;
+    font-size: 12pt;
+    width: 70%;
+    text-align: center;    
+}
+.resumeImg {
+    padding: 0;
+    margin: 0 auto;
+    width: 70%;
+}
+
 .project-board, .project-board1 {
     display: flex;
     flex-flow: row wrap;

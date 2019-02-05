@@ -81,11 +81,29 @@ function portfolioListener (attachTo) {
     })
 };
 
+// About Fullview:
+
+function aboutListener (attachTo) {
+    $(attachTo).click(function () {
+        $(".about-fullview").toggleClass("showMore")
+    })
+    $(attachTo).click(function () {
+        $(".exit-about").toggleClass("showMore")
+    })
+};
+
 var icon = $(".portfolio-icon");
 var seeMore = $(".portfolio-more");
 var exit = $(".exit");
+var exitAbout = $(".exit-about");
+
+var aboutMore = $(".about-more");
+
 
 $(document).ready(portfolioListener(icon));
 $(document).ready(portfolioListener(seeMore));
 $(document).ready(portfolioListener(exit));
+
+$(document).ready(aboutListener(exitAbout));
+$(document).ready(aboutListener(aboutMore));
 

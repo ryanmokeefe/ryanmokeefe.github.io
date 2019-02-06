@@ -82,15 +82,26 @@ nav a:hover span {
 /* END NAV */
 
 h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* font-family: Montserrat, arial, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+
     color: rgb(247, 115, 8);
-    font-weight: 900;
     padding: 0;
     margin: 0;
     height: 100vh;
-    line-height: 100vh;
+    letter-spacing: 2px;
     text-align: center;
     font-weight: 900;
     font-size: 25pt;
+}
+.h1-tagline {
+    font-size: 16px;
+    font-family: Montserrat, arial, sans-serif;
+    margin-top: 2%;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 .scrollDown {
     background: url("img/scrollUp1.png");
@@ -217,7 +228,6 @@ h2 {
 .resumeImg {
     padding: 0;
     margin: 0 auto;
-    width: 70%;
 }
 
 .project-board, .project-board1 {
@@ -260,6 +270,12 @@ h2 {
     height: 100%;
     transition: 1s;
 }
+.hidden {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 280px;
+}
 .project-board1 .project-img img {
     z-index: 2;
 }
@@ -267,7 +283,6 @@ h2 {
     z-index: 13;
 }
 .project-img p, .project-img a {
-    /* display: block; remove? */
     position: relative;
     top: -300px;
     padding: 10px 20px;
@@ -275,11 +290,19 @@ h2 {
     width: 100%;
     height: 100%;
 }
+.hidden p {
+    width: 90%;
+    margin: 0 auto;
+}
+.combat a {
+    padding-bottom: 60px;   
+}
 .project-board1 h4 {
     background-color: rgb(247, 115, 8);
     padding: 4px;
 }
 .project-tag {
+    width: 292px;
     padding: 1px 4px;
     background-color: rgb(247, 115, 8);
 }
@@ -291,11 +314,19 @@ h2 {
     z-index: 12;
 }
 .project-img p {
+    text-align: center;
     color: white;
+    max-width: 300px;
+    padding: 90px 10px 0;
     margin-bottom: 90px;
 }
+.project-anchors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .project-img a {
-    display: inline;
+    text-align: center;
     text-decoration: none;
     letter-spacing: 1pt;
     color: rgba(255, 255, 255, .6);
@@ -303,7 +334,7 @@ h2 {
 .project-img a:hover {
     color: rgba(255, 255, 255, 1);
 }
-.project-img:hover img {
+.project-img:hover img{
     left: 100%;
     transition: 1s;
 }
@@ -364,11 +395,11 @@ h2 {
     height: 52px;
     width: 52px;
 }
-.twitter {
-    background-image: url("img/social-tw.png");
+.github {
+    background-image: url("img/github.png");
 }
-.facebook {
-    background-image: url("img/social-fb.png");
+.email {
+    background-image: url("img/email.png");
 }
 .linkedin {
     background-image: url("img/social-li.png");

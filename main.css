@@ -17,8 +17,10 @@ body {
 }
 
 /* NAV */
-
-nav {
+.navMobile {
+    display: none;
+}
+.fixed {
     z-index: 5;
     display: flex;
     flex-flow: column wrap;
@@ -30,7 +32,7 @@ nav {
     width: 150px;
 }
 
-nav a {
+.fixed a {
     z-index: 5;
     position: relative;
     right: -100px;
@@ -43,18 +45,18 @@ nav a {
     text-decoration: none;
 }
 
-nav:hover a {
+.fixed:hover a {
     background-color: #ccc;
     border: 2px solid #fff;
 
 }
 
-nav a:hover {
+.fixed a:hover {
     border-color: transparent;
     background-color: #f77308;
 }
 
-nav a span {
+.fixed a span {
     z-index: 5;
 
     display: none;
@@ -68,7 +70,7 @@ nav a span {
 
 }
 
-nav a:hover span {
+.fixed a:hover span {
     display: inline;
     background-color: rgb(247, 115, 8);
     color: white;
@@ -85,22 +87,28 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* font-family: Montserrat, arial, sans-serif; */
-    font-family: Arial, Helvetica, sans-serif;
     color: rgb(247, 115, 8);
     padding: 0;
     margin: 0;
     height: 100vh;
-    letter-spacing: 2px;
+    line-height: 200%;
     text-align: center;
+    font-family: Montserrat, arial, sans-serif;
+    font-weight: 100; 
+    letter-spacing: 18px;
+    /* font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
+    letter-spacing: 12px; */
     font-size: 25pt;
 }
 .h1-tagline {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    /* font-family: Montserrat, arial, sans-serif;
+    font-weight: 100; */
     font-size: 20px;
-    font-family: Montserrat, arial, sans-serif;
+    letter-spacing: 2px;
     margin-top: 2%;
-    /* font-family: Arial, Helvetica, sans-serif; */
 }
 .scrollDown {
     background: url("img/scrollUp1.png");
@@ -132,9 +140,6 @@ h2 {
     text-align: center;
     letter-spacing: 2pt;
 }
-.about h2 {
-    padding: 7% 8%;
-}
 .about-tagline {
     color: rgb(99, 91, 78);
     letter-spacing: 1pt;
@@ -142,7 +147,6 @@ h2 {
     margin: 0;
     padding: 0;
     padding-bottom: 8%;
-
     font-size: 70%;
 }
 .about, .portfolio, .projects {
@@ -157,6 +161,9 @@ h2 {
     background-image: url("img/img2.jpg");
     height: 100%;
 }
+.about-more span {
+    margin: 0 20px;
+}
 .portfolio {
     background-image: url("img/img3.jpg");
 }
@@ -167,9 +174,6 @@ h2 {
     background-color: rgba(247, 115, 8, .9);
     cursor: pointer;
     color: white;
-}
-.about-more span {
-    margin: 0 20px;
 }
 
 /* PORTFOLIO/ABOUT FULLVIEW */
@@ -340,26 +344,6 @@ h2 {
     left: 100%;
     transition: 1s;
 }
-
-
-/*  */
-
-/* .codeLinks span {
-    display: none;
-} */
-/* remove .front: */
-/* .codelinks .front span {
-    display: block;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    line-height: 100%;
-} */
-
-
-
-
-
 
 /* END FULLVIEW */
 

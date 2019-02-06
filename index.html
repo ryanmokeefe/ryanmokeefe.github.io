@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, 
+    width=device-width, initial-scale=1.0, 
+    minimum-scale=1.0, maximum-scale=1.0, 
+    user-scalable=no, target-densitydpi=device-dpi">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="media.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -14,7 +18,12 @@
 </head>
 
 <body>
-
+<nav class="navMobile">
+    <a href="#about"><span>ABOUT</span> </a>
+    <a href="#projects"><span>PROJECTS</span></a>
+    <a href="#portfolio" class="portfolio-icon"><span>PORTFOLIO</span></a>
+    <a href="#contact"><span>CONTACT</span></a>
+</nav>
 <nav class="fixed">
     <a href="#about"><span>ABOUT</span> </a>
     <a href="#projects"><span>PROJECTS</span></a>
@@ -36,12 +45,13 @@
             I'm a Full-Stack Web Developer who is driven by curiosity and a lifelong dedication to learning. Passionate about transcending barriers through open-source knowledge, I excel at problem solving through innovative thinking, creativity, and resourcefulness.
     </span></h2>
 
-<!-- background box + resume box -->
 <h2 class="about-more">Read More <span>+</span> View Resume</h2>
+</div>
+
+<!-- About Fullview -->
 
 <div class="about-fullview">
         <h2 class="about-h2">Background & Resume<span class="exit-about"></span></h2>
-        <!-- <div class="background-board"> -->
            <div class="background">
                 <p>
                         Throughout my career, I've learned the importance of teamwork as well as taking the inititive to be able to work independently. Previously, I worked in retail and customer service for ten years, including as a senior team lead at Target where I was responsible for daily store operations, team management, training, and processing logistics. I've spent the last four years also working in the event industry as an A/V and lighting technician, building sets for business conventions, award ceremonies, and music festivals. 
@@ -55,13 +65,9 @@
 
            <img class="resumeImg" src="img/RyanResumeImg.jpg" alt="resume-img">
 
-        <!-- </div> -->
 </div>
 
-<!--  -->
-
-
-</div>
+<!-- End Fullview -->
 
 <div class="projects bg-fixed" id="projects">
     <h2>Featured Projects</h2>
@@ -76,15 +82,12 @@
                     <div class="project-anchors">
                         <a class="codeLinks front" href="https://github.com/ryanmokeefe/project2-frontend">
                             Code
-                            <!-- <span> FRONTEND </span> -->
                         </a>
                         <a class="codeLinks" href="https://github.com/ryanmokeefe/Project-2">
                             API
-                            <!-- <span> BACKEND </span> -->
                         </a>
                         <a class="codeLinks" href="https://additionalresources.herokuapp.com/">
                             Site
-                            <!-- <span> GO TO </span> -->
                         </a>
                     </div>
                 </div>
@@ -97,7 +100,6 @@
             <div class="project-img">
                 <img src="img/project-3.png" alt="lit swap image">
                 <div class="hidden">
-                    <!-- -->
                     <p>A Collaborative project for trading books and music.</p>
                     <div class="project-anchors">
                         <a href="https://github.com/keaglin/project3-react">Code</a>
@@ -133,7 +135,8 @@
 <div class="portfolio bg-fixed" id="portfolio">
     <h2 class="portfolio-more">See More Work...</h2>
     
-    <!-- Fullview -->
+    <!-- Portfolio Fullview -->
+
     <div class="portfolio-fullview">
         <h2 class="portfolio-h2">Portfolio <span class="exit"></span></h2>
         <div class="project-board project-board2">
@@ -173,7 +176,6 @@
                     <div class="project-img">
                         <img src="img/project-3.png" alt="lit swap image">
                         <div class="hidden">
-                            <!-- -->
                             <p>A Collaborative project for trading books and music.</p>
                             <div class="project-anchors">
                                 <a href="https://github.com/keaglin/project3-react">Code</a>
@@ -207,7 +209,9 @@
 
         </div>
     </div>
-    <!-- end Fullview -->
+
+    <!-- End Fullview -->
+
 </div>
 
 <div class="contact" id="contact">

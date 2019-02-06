@@ -30,7 +30,9 @@ $('a[href*="#"]')
 
 
   // Scroll Down
-
+$(document).ready(function() {
+        $(".scrollDown").addClass("show");
+})
 $(window).scroll(function() {
     if ($(window).scrollTop() < 500)
     {

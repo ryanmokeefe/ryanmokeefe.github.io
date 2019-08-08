@@ -92,8 +92,6 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/bg-masthead.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg"); */
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/flower-philly.jpg");
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/flower-philly.jpg");
   background-position: center;
@@ -208,11 +206,117 @@
     width: 30%;
   }
 }
+/* PHOTO */
+.tilt {
+  overflow: hidden;
+}
+/* TODO: move photo left @1024px */
 
+@media (min-width: 995px) {
+  .tilt-white {
+    z-index: 0;
+    background-color: #F4F5F9;
+    height: 155%;
+    width:80%;
+    position: relative;
+    top:-20%;
+    right:0;
+    margin-left: 200px;
+    transform:rotate(20deg);
+  }
+  .tilt img {
+    transform:rotate(-20deg);
+    position: relative;
+    top:15%;
+    right:-8%;
+  }
+  /* ABOUT / TODO: make responsive */
+  .about-tilt {
+    overflow: hidden;
+    width: 140%;
+    background-color: transparent !important;
+  }
+  .about-tilt-2 {
+    z-index: -1;
+    background-color: #161616;
+    height: 210% !important;
+    width:110%;
+    position: relative;
+    top:-70%; 
+    left:-20%;
+    transform:rotate(20deg);
+  }
+  .about-tilt-text {
+    text-align: left !important;
+    z-index: 2;
+    position: absolute;
+    bottom:25%;
+    margin-left: 70px;
+  }
+}
+
+/* SKILLS */
+.skills-container {
+  margin: 100px auto;
+}
+.skills {
+  margin: 50px auto;
+}
+.skills-list li {
+  list-style: none;
+  position: relative;
+  left: -7%;
+}
+/* .list-1 {
+  text-align: left;
+}
+.list-2 {
+  text-align: right;
+} */
+.skills-border {
+  border-left: 1px solid #64a19d;
+  border-right: 1px solid #64a19d;
+  margin-bottom: 50px;
+  padding: 0 30px;
+  position: relative;
+  top: 10%;
+}
+.skills-low {
+  padding-top: 65px;
+}
+.skills-border li {
+  position: relative;
+  left: -20%;
+}
+.skill-heading {
+  margin: 50px;
+  color: #999;
+}
+
+
+/* PROJECTS */
+.img-color {
+  /* TODO: Fix p2 img placement */
+  display: none;
+}
+
+@media (min-width: 995px) {
+  .img-color {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+  }
+  .img-hover:hover .img-color {
+    z-index: 2;
+    cursor: pointer;
+  }
+}
+
+/* CONTACT FORM */
 .signup-section {
   padding: 10rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-signup.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/flower-2.jpeg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/flower-2.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

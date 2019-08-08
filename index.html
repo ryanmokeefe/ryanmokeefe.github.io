@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/grayscale.min.css" rel="stylesheet">
+  <link href="css/grayscale.css" rel="stylesheet">
 
 </head>
 
@@ -39,6 +39,9 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
@@ -54,7 +57,7 @@
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">Ryan O'Keefe</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">Full-Stack Web Developer bringing you the latest in engaging design.</h2>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Developer | JavaScript Engineer | Creator</h2>
         <a href="#about" class="btn btn-primary js-scroll-trigger">Learn More</a>
       </div>
     </div>
@@ -68,18 +71,120 @@
           <h2 class="text-white mb-4">About Me</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col mx-auto">
-          <p class="text-white-50">I'm a Full-Stack Web Developer who is driven by curiosity and a lifelong dedication to learning. Passionate about transcending barriers through open-source knowledge, I excel at problem solving through innovative thinking, creativity, and resourcefulness.
-          </p>
-        </div>
-        <div class="col-portrait">
-          <div id="team-member">
-            <img class="rounded-circle" src="./img-1/ga-portrait.jpg" alt="photo">        
+      
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="tilt col-lg-6">
+          <div class="tilt-white">
+            <img class="tilt-img img-fluid" src="img-1/ga-portrait.jpg" alt="photo">
           </div>
         </div>
-      <img src="img/ipad.png" class="img-fluid" alt="">
-    </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="text-center h-100 project about-tilt">
+            <div class="d-flex h-100 about-tilt-2">
+            </div>
+            <!-- moved -->
+                <div class="project-text about-tilt-text w-100 my-auto text-center text-lg-right">
+                  <!-- <h4 class="text-white">Mountains</h4> -->
+                  <p class="mb-0 text-white-50">Full-Stack Web Developer who is driven by curiosity and a lifelong dedication to learning. Passionate about transcending barriers through open-source knowledge, I excel at problem solving through innovative thinking, creativity, and resourcefulness.</p>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+            <!--  -->
+          </div>
+        </div>
+      </div>
+
+      <!-- REMOVED -->
+      <!-- <div class="row">
+        <img src="img/ipad.png" class="img-fluid" alt="">
+      </div> -->
+
+      <div class="row">
+        <div id="skills" class="container skills-container">
+          <div class="col skills mx-auto">
+            <!-- <h2 class="text-white mb-4">Skills</h2> -->
+          </div>
+          <div class="row text-center">
+            <!--  -->
+            <div class="skills-low col-md-4">
+              <a class="skills-link js-scroll-trigger" href="#tenant-hb">
+                <span class="fa-stack fa-4x">
+                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <h4 class="skill-heading text-white">Testing</h4>
+              <ul class="text-white-50 skills-list">
+                <li>Mocha</li>
+                <li>Chai</li>
+                <li>Jest</li>
+                <li>Enzyme</li>
+              </ul>
+            </div>
+            <!--  -->
+            <div class="skills-border col-md-4">
+              <a class="skills-link js-scroll-trigger" href="#first-time-hb">
+                <span class="fa-stack fa-4x">
+                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <h4 class="skill-heading text-white">Languages & Frameworks</h4>
+              <div class="row">
+                <div class="col">
+                  <ul class="text-white-50 skills-list list-1">
+                    <li>JavaScript</li>
+                    <li>CSS3</li>
+                    <li>HTML5</li>
+                    <li>JQuery</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                    <li>Mongoose</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul class="text-white-50 skills-list list-2">
+                    <li>React</li>
+                    <li>Handlebars</li>
+                    <li>Materialize</li>
+                    <li>Ruby</li>
+                    <li>Rails</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="skills-low col-md-4">
+              <a class="skills-link js-scroll-trigger" href="#supporter">
+                <span class="fa-stack fa-4x">
+                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fas fa-palette fa-stack-1x fa-inverse"></i>
+                </span>
+              </a> 
+              <h4 class="skill-heading text-white">Misc.</h4>
+              <ul class="text-white-50 skills-list">
+                <li>Photography</li>
+                <li>Photoshop</li>
+                <li>Lightroom</li>
+                <li>Unity Engine</li>
+              </ul>
+              <!-- (Earth Engine, etc) -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
   </section>
 
   <!-- Projects Section -->
@@ -88,14 +193,15 @@
 
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="./img-1/CombatDemo4.png" alt="Unity">
+        <div class="img-hover col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="./img/CombatDemo-bw.png" alt="Unity">
+          <img class="img-color img-fluid mb-3 mb-lg-0" src="img/CombatDemo1.png" alt="Unity">
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>Unity Combat Demo</h4>
             <p class="text-black-50 mb-0">
-                A brief combat demo utilizing Scriptable Objects, Raycasting, UI, Pathfinding, Interfaces, Coroutines, and much more.  * All models free from Unity Asset Store.
+              A brief combat demo utilizing Scriptable Objects, Raycasting, UI, Pathfinding, Interfaces, Coroutines, and much more.  * All models free from Unity Asset Store.
             </p>
           </div>
         </div>
@@ -103,6 +209,63 @@
 
       <!-- Project One Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="img-hover col-lg-6">
+          <img class="img-fluid" src="img/project-2-bw.png" alt="project-3">
+          <img class="img-color img-fluid" src="img/project-2.png" alt="project-3">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Additional Resources</h4>
+                <p class="mb-0 text-white-50">A website for compiling web development resources. </p>
+                <p class="mb-0 text-white-50">Built with React, Express, MongoDB, Node, and Materialize.</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+                <div class="project-anchors">
+                    <a class="codeLinks front" href="https://github.com/ryanmokeefe/project2-frontend">
+                        Code
+                    </a>
+                    <a class="codeLinks" href="https://github.com/ryanmokeefe/Project-2">
+                        API
+                    </a>
+                    <a class="codeLinks" href="https://additionalresources.herokuapp.com/">
+                        Site
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="img-hover col-lg-6">
+          <img class="img-fluid" src="img/project-3-bw.png" alt="project-3">
+          <img class="img-color img-fluid" src="img/project-3.png" alt="project-3">
+        </div>
+
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Mountains</h4>
+                <p class="mb-0 text-white-50">A Collaborative project for trading books and music.</p>
+                <p class="mb-0 text-white-50">Built with React, Express, MongoDB, Node, and Materialize</p>
+
+                <hr class="d-none d-lg-block mb-0 mr-0">
+                <div class="project-anchors">
+                  <a href="https://github.com/keaglin/project3-react">Code</a>
+                  <a href="https://github.com/keaglin/project3-api">API</a>
+                  <a href="https://shiny-flight.surge.sh/">Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project One Row -->
+      <!-- <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
           <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
         </div>
@@ -117,26 +280,7 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Project Two Row -->
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Mountains</h4>
-                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                <hr class="d-none d-lg-block mb-0 mr-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      </div> -->
     </div>
   </section>
 
@@ -147,11 +291,11 @@
         <div class="col-md-10 col-lg-8 mx-auto text-center">
 
           <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+          <h2 class="text-white mb-5">Email Here</h2>
 
           <form class="form-inline d-flex">
             <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+            <button type="submit" class="btn btn-primary mx-auto">Email</button>
           </form>
 
         </div>

@@ -260,13 +260,10 @@
 .tilt-img {
   width: auto;
   height: auto;
-  /* position: relative;
-  top:9%; */
 }
 .tilt {
   overflow: hidden;
 }
-
 
 /* TODO: 992-1023 */
 @media (min-width: 992px) {
@@ -337,7 +334,7 @@
   align-items: center;
   margin: 0 auto;
 }
-.list-1, .list-2 {
+.list-1 {
   width: 30vw;
 }
 @media (min-width: 768px) {
@@ -349,12 +346,12 @@
     position: relative;
     top: 10%;
   }
-  .list-1, .list-2 {
+  .list-1 {
     width: 20vw;
   }
 }
 @media (min-width: 1440px) {
-  .list-1, .list-2 {
+  .list-1 {
     width: 10vw;
   }
 }
@@ -374,8 +371,8 @@
 }
 /* @media only screen and (max-width: 600px) and (min-width: 400px)  */
 
-
 /* PROJECTS */
+
 .project-h2 {
   height: 10rem;
   line-height: 10rem;
@@ -430,7 +427,7 @@
 }
 
 
-/* CONTACT FORM */
+/* CONTACT  */
 .far {
   margin-bottom: 50px !important;
 }
@@ -466,6 +463,16 @@
   width: 3rem;
 }
 
+.contact-section a, .contact-section h4 {
+  color: #3c6360;
+}
+
+/* .contact-section .card:hover i {
+  font-size: 1.25rem;
+  padding: 0;
+} */
+
+/*  */
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;

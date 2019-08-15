@@ -205,7 +205,22 @@
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 3rem 0;
+}
+@media (min-width: 768px) {
+  .projects-section {
+    padding: 6rem 0;
+  }
+}
+@media (min-width: 1024px) {
+  .projects-section {
+    padding: 8rem 0;
+  }
+}
+@media (min-width: 1440px) {
+  .projects-section {
+    padding: 10rem 0;
+  }
 }
 
 .projects-section .featured-text {
@@ -245,14 +260,16 @@
 .tilt-img {
   width: auto;
   height: auto;
+  /* position: relative;
+  top:9%; */
 }
-
 .tilt {
   overflow: hidden;
 }
-/* TODO: move photo left @1024px */
-/* TODO: adjust about me section - mobile */
-@media (min-width: 995px) {
+
+
+/* TODO: 992-1023 */
+@media (min-width: 992px) {
   .tilt-white {
     z-index: 0;
     background-color: #F4F5F9;
@@ -268,9 +285,8 @@
     transform:rotate(-20deg);
     position: relative;
     top:15%;
-    right:-8%;
+    right:5%;
   }
-  /* ABOUT / TODO: make responsive */
   .about-tilt {
     overflow: hidden;
     width: 140%;
@@ -280,7 +296,7 @@
     z-index: -1;
     background-color: #161616;
     height: 210% !important;
-    width:110%;
+    width: 110%;
     position: relative;
     top:-70%; 
     left:-20%;
@@ -293,6 +309,13 @@
     bottom:25%;
     margin-left: 70px;
   }
+}
+
+@media (min-width: 1200px) {
+  .tilt img {
+    right:-7%;
+    top: 11%;
+  }  
 }
 
 /* SKILLS */
@@ -314,6 +337,9 @@
   align-items: center;
   margin: 0 auto;
 }
+.list-1, .list-2 {
+  width: 30vw;
+}
 @media (min-width: 768px) {
   .skills-border {
     border-left: 1px solid #64a19d;
@@ -323,7 +349,16 @@
     position: relative;
     top: 10%;
   }
+  .list-1, .list-2 {
+    width: 20vw;
+  }
 }
+@media (min-width: 1440px) {
+  .list-1, .list-2 {
+    width: 10vw;
+  }
+}
+
 @media (min-width: 992px) {
   .skills-border {
     padding: 0 50px;
@@ -341,6 +376,18 @@
 
 
 /* PROJECTS */
+.project-h2 {
+  height: 10rem;
+  line-height: 10rem;
+  border: red 1px solid;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .img-color {
   z-index: -1;
   position: absolute;
@@ -372,6 +419,11 @@
     position: absolute;
     top: 0;
   }
+  /* TODO: change transition: 
+  cover with second div - 
+    2s - fade dark - 2s fade light ? 
+    2s - switch to color photo
+  */
   .img-hover:hover .img-color {
     z-index: 2;
     cursor: pointer;
